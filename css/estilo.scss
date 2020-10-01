@@ -1,0 +1,410 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700*/
+
+
+// Primary
+
+$Cyan: hsl(179, 62%, 43%);
+$BrightYellow: hsl(71, 73%, 54%);
+
+// Neutral
+$LightGray: hsl(204, 43%, 93%);
+$GrayishBlue: hsl(218, 22%, 67%);
+$Karla: 'Karla',
+sans-serif;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  max-width: 1440px;
+  max-height: 800px;
+}
+
+.container {
+  background-color: $LightGray;
+  padding-top: 165px;
+  padding-left: 400px;
+  padding-right: 400px;
+  padding-bottom: 165px;
+  font-family: $Karla;
+  font-size: 16px;
+
+}
+
+.wrapper {
+
+  height: 475px;
+  width: 640px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 35px #ccc;
+  display: grid;
+  grid-template-rows: 45% 55%;
+
+}
+
+.one {
+  border-radius: 10px 10px 0px 10px;
+  background-color: white;
+  height: 100%;
+  padding-left: 40px;
+
+}
+
+.one>h1 {
+  padding-top: 40px;
+  color: $Cyan;
+  font-size: 23px;
+  padding-bottom: 20px;
+}
+
+.one>h2 {
+  color: $BrightYellow;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.one>p {
+  width: 540px;
+  color: $GrayishBlue;
+  line-height: 25px;
+  font-size: 16px;
+}
+
+.lower {
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.two {
+  padding-left: 40px;
+  background-color: $Cyan;
+  border-radius: 0px 0px 0px 10px;
+}
+
+.two>h2 {
+  font-size: 18px;
+  color: white;
+  padding-top: 40px;
+}
+
+.two>h3 {
+  padding-top: 15px;
+  font-size: 30px;
+  color: white;
+}
+
+.two>p {
+  color: #80E2E5;
+  padding-left: 65px;
+  margin-top: -30px;
+  margin-bottom: 10px;
+}
+
+.two>h4 {
+  color: #A3FBFD;
+  font-size: 15px;
+  padding-top: 15px;
+  margin-bottom: 35px;
+}
+
+.button {
+  height: 50px;
+  width: 235px;
+  border-radius: 5px;
+  background-color: $BrightYellow;
+  text-align: center;
+  box-shadow: 0px 3px 15px #219F89, 0px 1px 5px gray;
+}
+
+.button>p {
+  padding-top: 15px;
+  color: white;
+}
+
+.three {
+  background-color: #4ABEBD;
+  border-radius: 0px 0px 10px 0px;
+  padding-left: 40px;
+}
+
+.three>h2 {
+  font-size: 18px;
+  color: white;
+  padding-top: 35px;
+}
+
+.three>p {
+  width: 185px;
+  line-height: 20px;
+  padding-top: 15px;
+  color: #A3FBFD;
+  font-size: 13px;
+  font-weight: 100;
+
+}
+
+@media(max-width: 1046px) {
+  .container {
+
+    padding-left: 200px;
+
+
+  }
+}
+
+@media(max-width: 845px) {
+  .container {
+
+    padding-left: 100px;
+
+
+  }
+}
+
+@media(max-width: 745px) {
+  .container {
+    overflow-x: hidden;
+    padding-left: 50px;
+
+
+  }
+}
+
+@media(max-width: 694px) {
+  .container {
+
+    padding-left: 20px;
+
+
+  }
+}
+
+@media(max-width: 664px) {
+  .container {
+
+    padding-left: 5px;
+    padding-bottom: 10px;
+
+  }
+}
+
+@media(max-width: 664px) {
+
+  .container {
+
+    padding-left: 110px;
+    padding-bottom: 10px;
+
+  }
+
+  .wrapper {
+
+    height: 800px;
+    width: 385px;
+    display: grid;
+    grid-template-rows: 33% 67%;
+
+  }
+
+  .lower {
+
+    grid-template-columns: 100%;
+
+  }
+
+  .one {
+    width: 385px;
+  }
+
+  .one>p {
+    width: 355px;
+
+  }
+
+  .two {
+    border-radius: 0px;
+    padding-left: 100px;
+  }
+
+  .three {
+    border-radius: 0px 0px 10px 10px;
+    padding-left: 100px;
+  }
+
+  .attribution {
+    width: 500px;
+    height: auto;
+    margin-left: -50px;
+  }
+}
+
+@media(max-width: 694px) {
+  .container {
+
+    padding-left: 20px;
+
+
+  }
+}
+
+@media(max-width: 544px) {
+  .container {
+
+    padding-left: 55px;
+
+
+  }
+}
+
+@media(max-width: 485px) {
+  .container {
+
+    padding-left: 25px;
+
+
+  }
+}
+
+@media(max-width: 455px) {
+  .container {
+
+    padding-left: 15px;
+
+
+  }
+}
+
+@media(max-width: 450px) {
+  * {
+    width: 450px;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 450px;
+    padding-left: 50px;
+    overflow-x: hidden;
+  }
+
+  .wrapper {
+    margin-top: -100px;
+    width: 310px;
+    height: 800px;
+    display: grid;
+    grid-template-rows: 30% 70%;
+
+  }
+
+  .upper {
+    width: 310px;
+  }
+
+  .one {
+    height: 100%;
+    padding-left: 8px;
+    width: 310px;
+  }
+
+  .one h1 {
+    padding-top: 15px;
+    font-size: 18px;
+  }
+
+  .one>h2 {
+    font-size: 18px;
+  }
+
+  .one>p {
+    font-size: 14px;
+    width: 280px;
+  }
+
+  .one>h1,
+  .one>h2,
+  .one>p {
+    width: 260px;
+    padding-left: 25px;
+  }
+
+  .lower {
+    width: 310px;
+
+  }
+
+  .two {
+    width: 310px;
+    padding-left: 10px;
+  }
+
+  .button {
+    padding-left: 60px;
+    text-align: justify;
+  }
+
+  .button>p {
+    margin-left: 50px;
+  }
+
+  .three {
+    width: 310px;
+    padding-left: 10px;
+  }
+
+  .three>h2,
+  .three>p {
+    margin-left: 50px;
+  }
+}
+
+@media(max-width: 375px) {
+  .container {
+    width: 360px;
+
+    padding-left: 20px;
+  }
+}
+
+@media(max-width: 360px) {
+
+  .wrapper {
+    height: 800px;
+  }
+
+  .container {
+    width: 360px;
+    height: 800px;
+  }
+}
